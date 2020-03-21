@@ -48,3 +48,5 @@ id咩區就set咩number
 sort條array
 
 ![](./80.jpg)
+
+**完**
