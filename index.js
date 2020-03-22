@@ -1,6 +1,6 @@
 maxPages = 999;
 id=20
-getUrl = (page) => `https://www.dcfever.com/trading/listing.php?id=${id}&type=used&page=${page}`;
+getUrl = (id) => (page) => `https://www.dcfever.com/trading/listing.php?id=${id}&type=used&page=${page}`;
 getDoc = (html) => (new DOMParser()).parseFromString(html, 'text/html');
 getHTML = (url) => fetch(url).then(res => res.text());
 isEmpty = (doc) => doc.querySelector('.no_content') !== null;
